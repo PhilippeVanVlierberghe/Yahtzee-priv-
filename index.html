@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yahtzee</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="module" src="js/Main.js" defer></script>
+</head>
+
+<body>
+    <h1>Yahtzee</h1>
+    <button id="btnStartGame" type="button">Start new game</button>
+
+    <div class="container">
+        <div class="diceArea">
+            <h1>DiceArea</h1>
+            <table>
+                <tr>
+                    <td><a class="diceLink" data-enabled="true" href="#"><img id="d1" class="dice" src="img/0.png"
+                                alt="dice 1"></a></td>
+                    <td><a class="diceLink" data-enabled="true" href="#"><img id="d2" class="dice" src="img/0.png"
+                                alt="dice 2"></a></td>
+                    <td><a class="diceLink" data-enabled="true" href="#"><img id="d3" class="dice" src="img/0.png"
+                                alt="dice 3"></a></td>
+                    <td><a class="diceLink" data-enabled="true" href="#"><img id="d4"class="dice" src="img/0.png"
+                                alt="dice 4"></a></td>
+                    <td><a class="diceLink" data-enabled="true" href="#"><img id="d5" class="dice" src="img/0.png"
+                                alt="dice 5"></a></td>
+                </tr>
+            </table>
+            <p id="attemptLbl"></p>
+            <p id="msgTurns" class="bold">Roll dice to play, you have a total of 13 turns (3 throws / turn)</p>
+            <button id="btnRollDices" type="button">Roll Dice</button>
+        </div>
+        <div id="scoreCard">
+            <h1>ScoreCard</h1>
+            <table>
+                <tr>
+                    <td class="long">Ones</td>
+                    <td class="small"><button id="btnOne" class="scoreBtn red" type="button " ></button></td>
+                </tr>
+                <tr>
+                    <td class="long">Twos</td>
+                    <td class="small"><button id="btnTwo" class="scoreBtn red" type="button" ></button></td>
+                </tr>
+                <tr>
+                    <td class="long">Threes</td>
+                    <td class="small"><button id="btnThree" class="scoreBtn red" type="button" ></button></td>
+                </tr>
+                <tr>
+                    <td class="long">Fours</td>
+                    <td class="small"><button id="btnFour" class="scoreBtn red" type="button" ></button></td>
+                </tr>
+                <tr>
+                    <td class="long">Fives</td>
+                    <td class="small"><button id="btnFive" class="scoreBtn red" type="button" ></button></td>
+                </tr>
+                <tr>
+                    <td class="long">Sixes</td>
+                    <td class="small"><button id="btnSix" class="scoreBtn red" type="button" ></button></td>
+                </tr>
+                <tr class="boldRow">
+                    <td class="long">Total</td>
+                    <td class="small" id="total">0</td>
+                </tr>
+                <tr class="boldRow">
+                    <td class="long">Bonus</td>
+                    <td class="small" id="bonus">0</td>
+                </tr>
+                <tr>
+                    <td class="long">Three of a kind</td>
+                    <td class="small"><button id="btnThreeOfKind" class="scoreBtn red" type="button"></button></td>
+                </tr>
+                <tr>
+                    <td class="long">Four of a kind</td>
+                    <td class="small"><button id="btnFourOfKind" class="scoreBtn red" type="button"></button></td>
+                </tr>
+                <tr>
+                    <td class="long">Full house</td>
+                    <td class="small"><button id="btnFullHouse" class="scoreBtn red" type="button"></button></td>
+                </tr>
+                <tr>
+                    <td class="long">Small straight</td>
+                    <td class="small"><button id="btnSmallStraight" class="scoreBtn red" type="button"></button></td>
+                </tr>
+                <tr>
+                    <td class="long">Large straight</td>
+                    <td class="small"><button id="btnLargeStraight" class="scoreBtn red" type="button"></button></td>
+                </tr>
+                <tr>
+                    <td class="long">Chance</td>
+                    <td class="small"><button id="btnChance" class="scoreBtn red" type="button"></button></td>
+                </tr>
+                <tr>
+                    <td class="long">Yahtzee</td>
+                    <td class="small"><button id="btnYahtzee"  class="scoreBtn red" type="button"></button></td>
+                </tr>
+                <tr class="boldRow">
+                    <td class="long">TOTAL SCORE</td>
+                    <td class="small" id="totalScore">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+body {
+  background-color: gray;
+}
+
+body > h1 {
+  color: white;
+  text-align: center;
+}
+
+body > p {
+  background-color: black;
+  color: white;
+  height: 2rem;
+  margin: 0;
+  line-height: 1.5rem;
+  padding-top: 0.5%;
+  padding-bottom: 0.2%;
+  padding-left: 10%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  height: 35rem;
+}
+
+.diceArea {
+  padding-top: 1rem;
+  background-color: #8db600;
+  border-radius: 15px;
+}
+
+.diceArea > * {
+  margin: 0 auto;
+}
+
+.diceArea > table {
+  margin-top: 1rem;
+}
+
+.diceArea > button {
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 1% 1%;
+  position: relative;
+  bottom: -55%;
+}
+
+#scoreCard{
+  padding-top: 1rem;
+  background-color: #ebca93;
+  border-radius: 15px;
+}
+
+#scoreCard> * {
+  margin: 0 auto;
+}
+
+#scoreCard table,
+#scoreCard td {
+  margin-top: 1rem;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+#scoreCard .long {
+  text-align: left;
+  width: 30rem;
+}
+
+#scoreCard .small {
+  text-align: center;
+  width: 5rem;
+}
+#scoreCard .small> button {
+  width: 100%;
+  height: 1.5rem;
+}
+
+#scoreCard .boldRow {
+  background-color: #f5bf62;
+  font-weight: bold;
+}
+.bold {
+  font-weight: bold;
+}
+.diceArea img:hover,
+.diceLink[data-enabled="false"]> img {
+  outline-style: solid;
+  outline-color:red;
+  transform: scale(0.7);
+}
+
+/*btn*/
+#btnStartGame {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.btnOne{
+    background-color: red;
+}
+
+/*colors*/
+.red {
+  background-color: red;
+  color: white;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+.orange{
+  background-color: #f5bf62;
+  color: black;
+  font-weight: bold;
+}
